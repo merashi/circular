@@ -76,6 +76,17 @@ public class CircularLinkedList {
         }
     }
 
-
+    public static void main(String[] args) {
+        CircularLinkedList linkedList = new CircularLinkedList();
+        linkedList.print();
+        for (int i = 0; i < 5; i++) {
+            linkedList.addNodeToHead(23+i);
+        }
+        linkedList.print();
+        linkedList.addNodeToTail(11);
+        linkedList.print();
+        linkedList.deleteHead();
+        linkedList.print();
+    }
 
 }
